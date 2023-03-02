@@ -1,0 +1,80 @@
+for i,v in pairs(game:GetService("Workspace")["aaaa_claps"]["IWI DESERT EAGLE"]:GetChildren())do
+if v.Name == "ACS_Settings" then
+gunmod = require(v)
+local l__TweenService__1 = game:GetService("TweenService");
+
+gunmod.MaxStoredAmmo = 21;
+gunmod.CanCheckMag = true;
+gunmod.MagCount = true;
+gunmod.ShellInsert = false;
+gunmod.ShootRate = 1000;
+gunmod.Bullets = 1;
+gunmod.BurstShot = 3;
+gunmod.ShootType = 1;
+gunmod.FireModes = {
+	ChangeFiremode = false, 
+	Semi = false, 
+	Burst = false, 
+	Auto = false
+};
+gunmod.LimbDamage = { 50, 50 };
+gunmod.TorsoDamage = { 50, 50 };
+gunmod.HeadDamage = { 100, 100 };
+gunmod.DamageFallOf = 0;
+gunmod.MinDamage = 0;
+gunmod.IgnoreProtection = false;
+gunmod.BulletPenetration = 100;
+gunmod.adsTime = 3;
+gunmod.CrossHair = false;
+gunmod.CenterDot = false;
+gunmod.CrosshairOffset = 0;
+gunmod.CanBreachDoor = false;
+gunmod.SightAtt = "";
+gunmod.BarrelAtt = "";
+gunmod.UnderBarrelAtt = "";
+gunmod.OtherAtt = "";
+gunmod.camRecoil = {
+	camRecoilUp = { 0, 0 }, 
+	camRecoilTilt = { 0, 0 }, 
+	camRecoilLeft = { 0, 0 }, 
+	camRecoilRight = { 0, 0 }
+};
+gunmod.gunRecoil = {
+	gunRecoilUp = { 0, 0 }, 
+	gunRecoilTilt = { 0, 0 }, 
+	gunRecoilLeft = { 0, 0 }, 
+	gunRecoilRight = { 0, 0 }
+};
+gunmod.AimRecoilReduction = 1;
+gunmod.AimSpreadReduction = 1;
+gunmod.MinRecoilPower = 1;
+gunmod.MaxRecoilPower = 1;
+gunmod.RecoilPowerStepAmount = 1;
+gunmod.MinSpread = 5;
+gunmod.MaxSpread = 50;
+gunmod.AimInaccuracyStepAmount = 5.75;
+gunmod.AimInaccuracyDecrease = 1;
+gunmod.WalkMult = 0;
+gunmod.EnableZeroing = false;
+gunmod.MaxZero = 500;
+gunmod.ZeroIncrement = 50;
+gunmod.CurrentZero = 0;
+gunmod.BulletType = "9x19mm";
+gunmod.MuzzleVelocity = 1000;
+gunmod.BulletDrop = 0.25;
+gunmod.Tracer = false;
+gunmod.BulletFlare = false;
+gunmod.TracerColor = Color3.fromRGB(255, 255, 255);
+gunmod.RandomTracer = {
+	Enabled = false, 
+	Chance = 25
+};
+gunmod.TracerEveryXShots = 1;
+gunmod.RainbowMode = false;
+gunmod.InfraRed = false;
+gunmod.CanBreak = true;
+gunmod.Jammed = false;
+return gunmod;
+
+end
+end
