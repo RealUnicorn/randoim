@@ -1,6 +1,6 @@
 -- Change "M16A4F" to the name of whatever gun you want
 -- Ensure you execute this prior to equipping your desired weapon
-for i,v in pairs(game:GetService("Workspace")["aaaa_claps"]["AK103"]:GetChildren())do
+for i,v in pairs(game:GetService("Workspace")["aaaa_claps"]["TOZ-194"]:GetChildren())do
 if v.Name == "ACS_Settings" then
 gunmod = require(v)
 
