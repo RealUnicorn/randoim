@@ -1,1 +1,85 @@
+-- Change "M16A4F" to the name of whatever gun you want
+-- Ensure you execute this prior to equipping your desired weapon
+for i,v in pairs(game:GetService("Workspace")["aaaa_claps"]["AK103"]:GetChildren())do
+if v.Name == "ACS_Settings" then
+gunmod = require(v)
 
+local l__TweenService__1 = game:GetService("TweenService");
+
+gunmod.AmmoInGun = gunmod.Ammo;
+gunmod.MaxStoredAmmo = 90;
+gunmod.CanCheckMag = true;
+gunmod.MagCount = true;
+gunmod.ShellInsert = false;
+gunmod.ShootRate = 800;
+gunmod.Bullets = 1;
+gunmod.BurstShot = 3;
+gunmod.ShootType = 1;
+gunmod.FireModes = {
+	ChangeFiremode = true, 
+	Semi = true, 
+	Burst = false, 
+	Auto = true
+};
+gunmod.LimbDamage = { 45, 50 };
+gunmod.TorsoDamage = { 67, 72 };
+gunmod.HeadDamage = { 150, 150 };
+gunmod.DamageFallOf = 0;
+gunmod.MinDamage = 0;
+gunmod.IgnoreProtection = false;
+gunmod.BulletPenetration = 100;
+gunmod.adsTime = 3;
+gunmod.CrossHair = false;
+gunmod.CenterDot = false;
+gunmod.CrosshairOffset = 0;
+gunmod.CanBreachDoor = false;
+gunmod.SightAtt = "";
+gunmod.BarrelAtt = "";
+gunmod.UnderBarrelAtt = "";
+gunmod.OtherAtt = "";
+gunmod.camRecoil = {
+	camRecoilUp = { 5, 7 }, 
+	camRecoilTilt = { 250, 250 }, 
+	camRecoilLeft = { 0, 0 }, 
+	camRecoilRight = { 0, 0 }
+};
+gunmod.gunRecoil = {
+	gunRecoilUp = { 60, 65 }, 
+	gunRecoilTilt = { 1, 2 }, 
+	gunRecoilLeft = { 1, 2 }, 
+	gunRecoilRight = { 1, 2 }
+};
+gunmod.AimRecoilReduction = 1;
+gunmod.AimSpreadReduction = 1;
+gunmod.MinRecoilPower = 1;
+gunmod.MaxRecoilPower = 2;
+gunmod.RecoilPowerStepAmount = 0.1;
+gunmod.MinSpread = 0.75;
+gunmod.MaxSpread = 100;
+gunmod.AimInaccuracyStepAmount = 0.75;
+gunmod.AimInaccuracyDecrease = 0.25;
+gunmod.WalkMult = 0;
+gunmod.EnableZeroing = true;
+gunmod.MaxZero = 500;
+gunmod.ZeroIncrement = 50;
+gunmod.CurrentZero = 0;
+gunmod.BulletType = "7.62x39mm";
+gunmod.MuzzleVelocity = 1500;
+gunmod.BulletDrop = 0.25;
+gunmod.Tracer = false;
+gunmod.BulletFlare = false;
+gunmod.TracerColor = Color3.fromRGB(255, 255, 255);
+gunmod.RandomTracer = {
+	Enabled = false, 
+	Chance = 25
+};
+gunmod.TracerEveryXShots = 3;
+gunmod.RainbowMode = false;
+gunmod.InfraRed = false;
+gunmod.CanBreak = true;
+gunmod.Jammed = false;
+return gunmod;
+
+
+end
+end
