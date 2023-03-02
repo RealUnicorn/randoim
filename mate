@@ -38,16 +38,16 @@ gunmod.BarrelAtt = "";
 gunmod.UnderBarrelAtt = "";
 gunmod.OtherAtt = "";
 gunmod.camRecoil = {
-	camRecoilUp = { 5, 7 }, 
-	camRecoilTilt = { 250, 250 }, 
+	camRecoilUp = { 0, 0 }, 
+	camRecoilTilt = { 0, 0 }, 
 	camRecoilLeft = { 0, 0 }, 
 	camRecoilRight = { 0, 0 }
 };
 gunmod.gunRecoil = {
-	gunRecoilUp = { 60, 65 }, 
-	gunRecoilTilt = { 1, 2 }, 
-	gunRecoilLeft = { 1, 2 }, 
-	gunRecoilRight = { 1, 2 }
+	gunRecoilUp = { 0, 0 }, 
+	gunRecoilTilt = { 0, 0 }, 
+	gunRecoilLeft = { 0, 0 }, 
+	gunRecoilRight = { 0, 0 }
 };
 gunmod.AimRecoilReduction = 1;
 gunmod.AimSpreadReduction = 1;
